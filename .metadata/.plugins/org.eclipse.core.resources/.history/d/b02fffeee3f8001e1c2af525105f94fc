@@ -1,0 +1,19 @@
+package ar.edu.unlp.info.oo2.ejercicio5;
+
+public class AdapterVideoStream {
+	
+	private VideoStream vs;
+	
+	
+	public AdaperVideoStream (VideoStream v) {
+		this.vs = v;
+	}
+	
+	
+	public void play() {
+		
+		this.vs.reproduce();
+		
+	}
+
+}
