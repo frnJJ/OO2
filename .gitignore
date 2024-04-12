@@ -1,3 +1,75 @@
 eclipse/
 
+# Eclipse
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE)
+*.pydevproject
+
+# Jython
+*.jy
+
+# Tidy
+*.tidy
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Scala IDE
+.target/
+
+# Play Framework
+logs/
+project/target/
+target/
+
+# IntelliJ IDEA
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# SASS
+.sass-cache/
+
+# Maven
+log/
+target/
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+
 
