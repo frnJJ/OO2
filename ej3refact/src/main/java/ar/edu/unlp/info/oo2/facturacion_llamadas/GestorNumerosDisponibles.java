@@ -12,7 +12,9 @@ public class GestorNumerosDisponibles {
 	}
 
 	public String obtenerNumeroDisponible(){
-		return gestor.obtenerNumeroDisponible(lineas);
+		String linea = gestor.obtenerNumeroDisponible(lineas);
+		this.lineas.remove(linea);
+		return linea;	
 	}
 
 	public void cambiarTipoGenerador(GestorNumeros gest){

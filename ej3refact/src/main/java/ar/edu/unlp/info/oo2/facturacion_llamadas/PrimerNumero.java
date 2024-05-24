@@ -6,9 +6,7 @@ public class PrimerNumero implements GestorNumeros{
 
     @Override
     public String obtenerNumeroDisponible(SortedSet<String> lineas){
-        String num = lineas.first();
-        lineas.remove(num);
-        return num;
+        return lineas.first();
     }
     
 }

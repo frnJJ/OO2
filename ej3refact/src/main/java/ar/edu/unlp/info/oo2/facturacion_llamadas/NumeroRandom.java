@@ -8,9 +8,7 @@ public class NumeroRandom implements GestorNumeros{
 
     @Override
     public String obtenerNumeroDisponible(SortedSet<String> lineas){
-        String num = new ArrayList<String>(lineas).get(new Random().nextInt(lineas.size()));
-        lineas.remove(num);
-        return num;
+        return new ArrayList<String>(lineas).get(new Random().nextInt(lineas.size()));
     }
 
 
