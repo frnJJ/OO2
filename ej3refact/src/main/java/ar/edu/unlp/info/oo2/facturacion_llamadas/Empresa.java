@@ -10,11 +10,7 @@ public class Empresa {
 
 
 	public boolean agregarNumeroTelefono(String numero) {
-		if (! this.guia.verificar(numero)){
-			guia.agregarNumero(numero);
-			return true;
-		}
-		return false;
+		return guia.agregarNumero(numero);
 	}
 
 	public String obtenerNumeroLibre(){
@@ -49,8 +45,7 @@ public class Empresa {
 
 
 	public double calcularMontoTotalLlamadas(Cliente cliente) {
-		double total = cliente.calcularMontoTotalLlamadas();
-		return total;
+		return cliente.calcularMontoTotalLlamadas();
 	}
 
 	public int cantidadDeUsuarios() {

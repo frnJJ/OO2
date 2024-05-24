@@ -4,14 +4,15 @@ import java.util.Random;
 import java.util.SortedSet;
 
 
-public class NumeroRandom extends GestorNumeros{
+public class NumeroRandom implements GestorNumeros{
 
     @Override
-    public String obtenerNumeroDisponible(){
-        String num = new ArrayList<String>(this.lineas).get(new Random().nextInt(this.lineas.size()));
-        this.lineas.remove(num);
+    public String obtenerNumeroDisponible(SortedSet<String> lineas){
+        String num = new ArrayList<String>(lineas).get(new Random().nextInt(lineas.size()));
+        lineas.remove(num);
         return num;
     }
+
 
     
 }

@@ -1,10 +1,12 @@
 package ar.edu.unlp.info.oo2.facturacion_llamadas;
 
-public class PrimerNumero extends GestorNumeros{
+import java.util.SortedSet;
+
+public class PrimerNumero implements GestorNumeros{
 
     @Override
-    public String obtenerNumeroDisponible(){
-        String num = this.lineas.first();
+    public String obtenerNumeroDisponible(SortedSet<String> lineas){
+        String num = lineas.first();
         lineas.remove(num);
         return num;
     }

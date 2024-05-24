@@ -1,22 +1,21 @@
 package ar.edu.unlp.info.oo2.facturacion_llamadas;
 
+import java.util.SortedSet;
+import java.util.TreeSet;
+
 public class GestorNumerosDisponibles {
 	private GestorNumeros gestor = new UltimoNumero();
+ 	private SortedSet<String> lineas = new TreeSet<String>();
 
-
-	public void agregarNumero(String numero){
-		this.gestor.agregarNumero(numero);
+	public boolean agregarNumero(String numero){
+		return this.lineas.add(numero);
 	}
 
-	public boolean verificar(String numero){
-		return this.gestor.verificar(numero);
-	}
 	public String obtenerNumeroDisponible(){
-		return gestor.obtenerNumeroDisponible();
+		return gestor.obtenerNumeroDisponible(lineas);
 	}
 
 	public void cambiarTipoGenerador(GestorNumeros gest){
-		gest.setLineas(this.gestor.getLineas());
 		this.gestor = gest;
 	}
 }
